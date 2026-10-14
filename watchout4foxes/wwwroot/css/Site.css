@@ -1,0 +1,193 @@
+body
+{
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+    margin: 0;
+}
+
+h2
+{
+    color: #999999;
+}
+
+#frmParagraph #result
+{
+    display:block;
+    width:30em;
+}
+
+div.bannerHandheld
+{
+    display: none;
+}
+
+div.bannerContainer
+{
+    position: relative;
+    width: 100%;
+    height: 145px;
+    background-color: #8c8c8c;
+    background-image: url(../images/bannerFillRight.png);
+    background-repeat: repeat-x;
+}
+
+div.bannerFillLeft,
+div.bannerFillRight
+{
+    display: none;
+}
+
+div.banner
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height:145px;
+    width: 100%;
+}
+
+div.menubar
+{
+    display:inline;
+    position:absolute;
+    bottom: 8px;
+    top: 115px;
+    left: 127px;
+    width: auto;
+    height:30px;
+    background-color: transparent;
+}
+
+    div.menubar a
+    {
+        text-decoration: none;
+        color: #EEEEEE;
+        margin-right:5px;
+    }
+
+        div.menubar a:hover
+        {
+            color: #FFFFC0;
+        }
+
+div.menubarItems
+{
+    display:inline;
+    text-align:left;
+    height: 30px;
+}
+
+div.mainBody
+{
+    float:left;
+    position: relative;
+    width: 100%;
+    background-image: url(../images/wo4snakesBG.png);
+    background-repeat: repeat-x;
+    min-height:500px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+div.content
+{
+    width:62%;
+    background-color: #FFFFFF;
+    display: inline-block;
+    min-height: 530px;
+    width: 650px;
+    position: relative;
+}
+
+div.resultContainer
+{
+    height: 285px;
+}
+
+div.resultBox
+{
+    display: inline-block;
+    width: 400px;
+    height: 282px;
+    background-color: #FFFFC0;
+}
+
+table.centeredResult td
+{
+    width: 400px;
+    height: 282px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2em;
+    padding: 5px;
+}
+
+table.paragraphResult td
+{
+    width: 400px;
+    height: 282px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 5px;
+}
+
+span.spacer
+{
+    width: 3em;
+    display: inline-block;
+}
+
+table.tblRandomPhrase
+{
+    display: inline-block;
+}
+
+table.tblRandomPhrase select
+{
+    width: 162px;
+}
+
+table.tblRandomParagraph
+{
+    display: inline-block;
+}
+
+    table.tblRandomParagraph td.col1
+    {
+        text-align: right;
+    }
+
+    table.tblRandomParagraph input[type=text]
+    {
+        width: 175px;
+    }
+
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}

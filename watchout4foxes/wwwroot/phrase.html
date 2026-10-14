@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Random Word Generator - Phrase | watchout4foxes</title>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width">
+    <link href="css/Site.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="bannerContainer">
+    <div class="bannerFillLeft"></div>
+    <div class="banner">
+        <a href="index.html">
+            <img src="images/wo4foxesBanner.png" alt="watchout4snakes">
+        </a>
+    </div>
+    <div class="bannerFillRight"></div>
+    <div class="bannerHandheld">watchout4snakes</div>
+    <div class="menubar">
+        <a href="word.html">Word</a>
+        <a href="wordplus.html">Word+</a>
+        <a href="phrase.html">Phrase</a>
+        <a href="sentence.html">Sentence</a>
+        <a href="paragraph.html">Paragraph</a>
+    </div>
+</div>
+
+<div class="mainBody">
+    <div class="content">
+        <h2>Phrase</h2>
+        <hr class="layoutRule">
+        <div class="resultContainer">
+            <div class="resultBox">
+                <table class="centeredResult">
+                    <tbody>
+                    <tr>
+                        <td><span id="result"></span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr class="layoutRule">
+        <div class="formContainer">
+            <form id="frmPhrase" method="post">
+                <p><input type="submit" value="Refresh"></p>
+                <table class="tblRandomPhrase">
+                    <tbody>
+                    <tr>
+                        <td>Word 1:</td>
+                        <td>
+                            <select id="Pos1" name="Pos1">
+                                <option value="n">Noun</option>
+                                <option selected="selected" value="a">Adjective</option>
+                                <option value="t">Verb (Transitive)</option>
+                                <option value="i">Verb (Intransitive)</option>
+                                <option value="e">Adverb</option>
+                                <option value="z">Interjection</option>
+                                <option value="s">Preposition</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="Level1" name="Level1">
+                                <option value="10">Very Common</option>
+                                <option value="20">Common</option>
+                                <option selected="selected" value="35">Average</option>
+                                <option value="50">Somewhat Uncommon</option>
+                                <option value="60">Uncommon</option>
+                                <option value="70">Very Uncommon</option>
+                                <option value="95">Obscure</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Word 2:</td>
+                        <td>
+                            <select id="Pos2" name="Pos2">
+                                <option selected="selected" value="n">Noun</option>
+                                <option value="a">Adjective</option>
+                                <option value="t">Verb (Transitive)</option>
+                                <option value="i">Verb (Intransitive)</option>
+                                <option value="e">Adverb</option>
+                                <option value="z">Interjection</option>
+                                <option value="s">Preposition</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="Level2" name="Level2">
+                                <option value="10">Very Common</option>
+                                <option value="20">Common</option>
+                                <option selected="selected" value="35">Average</option>
+                                <option value="50">Somewhat Uncommon</option>
+                                <option value="60">Uncommon</option>
+                                <option value="70">Very Uncommon</option>
+                                <option value="95">Obscure</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Word 3:</td>
+                        <td>
+                            <select id="Pos3" name="Pos3">
+                                <option value="" selected="selected">-- Select Word Type --</option>
+                                <option value="n">Noun</option>
+                                <option value="a">Adjective</option>
+                                <option value="t">Verb (Transitive)</option>
+                                <option value="i">Verb (Intransitive)</option>
+                                <option value="e">Adverb</option>
+                                <option value="z">Interjection</option>
+                                <option value="s">Preposition</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="Level3" name="Level3">
+                                <option value="" selected="selected">-- Select Complexity --</option>
+                                <option value="10">Very Common</option>
+                                <option value="20">Common</option>
+                                <option value="35">Average</option>
+                                <option value="50">Somewhat Uncommon</option>
+                                <option value="60">Uncommon</option>
+                                <option value="70">Very Uncommon</option>
+                                <option value="95">Obscure</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Word 4:</td>
+                        <td>
+                            <select id="Pos4" name="Pos4">
+                                <option value="" selected="selected">-- Select Word Type --</option>
+                                <option value="n">Noun</option>
+                                <option value="a">Adjective</option>
+                                <option value="t">Verb (Transitive)</option>
+                                <option value="i">Verb (Intransitive)</option>
+                                <option value="e">Adverb</option>
+                                <option value="z">Interjection</option>
+                                <option value="s">Preposition</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="Level4" name="Level4">
+                                <option value="" selected="selected">-- Select Complexity --</option>
+                                <option value="10">Very Common</option>
+                                <option value="20">Common</option>
+                                <option value="35">Average</option>
+                                <option value="50">Somewhat Uncommon</option>
+                                <option value="60">Uncommon</option>
+                                <option value="70">Very Uncommon</option>
+                                <option value="95">Obscure</option>
+                            </select>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div style="font-size: 0.75em; color: #888; margin-top: 35px; text-align: center;">
+            watchout4foxes - A tribute to watchout4snakes. Kon kon.
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/engine.js" type="text/javascript"></script>
+</body>
+</html>
