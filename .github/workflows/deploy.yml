@@ -1,4 +1,5 @@
-name: Deploy Watchout4Foxes to GitHub Pages
+
+name: Deploy watchout4foxes to GitHub Pages
 
 on:
   push:

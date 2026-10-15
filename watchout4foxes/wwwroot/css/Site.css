@@ -191,3 +191,30 @@ table.tblRandomParagraph
 {
     display: none;
 }
+
+@media (max-width: 767px)
+{
+    div.menubar
+    {
+        top: auto;
+        bottom: 8px;
+        height: auto;
+    }
+
+    div.content
+    {
+        width: 95%;
+    }
+
+    div.resultBox,
+    table.centeredResult td,
+    table.paragraphResult td
+    {
+        width: 100%;
+    }
+
+    #frmParagraph #result
+    {
+        width: 100%;
+    }
+}
