@@ -31,7 +31,13 @@ var sentenceGen = new SentenceGenerator(lexicon);
 var app = builder.Build();
 
 app.UseDefaultFiles();
-app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    OnPrepareResponse = ctx =>
+    {
+        ctx.Context.Response.Headers.Append("Cache-Control", "public,max-age=604800");
+    }
+});
 
 app.MapPost("/Random/RandomPhrase", async context =>
 {

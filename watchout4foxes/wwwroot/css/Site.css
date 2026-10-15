@@ -48,6 +48,13 @@ div.banner
     width: 100%;
 }
 
+div.banner img
+{
+    width: 926px;
+    height: 145px;
+    display: block;
+}
+
 div.menubar
 {
     display:inline;
